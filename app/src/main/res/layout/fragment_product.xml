@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".Product"
+android:background="@color/vilote">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/pullToRefreshproduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" tools:ignore="WebViewLayout">
+
+        <!--<LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">-->
+
+            <!--<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"-->
+
+            <!--&gt;-->
+
+                <!--<androidx.recyclerview.widget.RecyclerView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:id="@+id/rvproduct"-->
+                <!--/>-->
+
+            <!--</LinearLayout>-->
+        <!--</LinearLayout>-->
+        <WebView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/webView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</FrameLayout>

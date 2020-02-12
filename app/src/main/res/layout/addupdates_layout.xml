@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+android:background="@color/vilote">
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/cartguidence"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:cardCornerRadius="9dp">
+            <ScrollView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp">
+                <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:columnCount="1"
+                        android:rowCount="9"
+                        android:orientation="horizontal" >
+
+
+
+
+                    <HorizontalScrollView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp" >
+                        <GridLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:columnCount="2"
+                                android:rowCount="7"
+                                android:orientation="horizontal" >
+                            <TextView
+                                    android:id="@+id/textpin"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text="Client id  : "
+                                    android:fontFamily="@font/montserrat"
+                                    android:layout_marginLeft="10dp"
+                                    android:textColor="@color/colorPrimary"/>
+                            <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:hint="id "
+                                    android:layout_marginLeft="10dp"
+                                    android:textColorHint="@color/vilote"
+                                    android:id="@+id/edpin"/>
+                            <TextView
+                                    android:id="@+id/textname"
+                                    android:fontFamily="@font/montserrat"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text="Name      : "
+                                    android:layout_marginLeft="10dp"
+                                    android:textColor="@color/colorPrimary"/>
+                            <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:hint="Name"
+                                    android:fontFamily="@font/montserrat"
+                                    android:layout_marginLeft="10dp"
+                                    android:textColorHint="@color/vilote"
+                                    android:id="@+id/etname"/>
+
+
+                            <TextView
+                                    android:id="@+id/texthouse"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text="Items       : "
+                                    android:fontFamily="@font/montserrat"
+                                    android:layout_marginLeft="10dp"
+                                    android:textColor="@color/colorPrimary"/>
+                            <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:hint="items"
+                                    android:fontFamily="@font/montserrat"
+                                    android:layout_marginLeft="10dp"
+                                    android:textColorHint="@color/vilote"
+                                    android:id="@+id/ethno"/>
+                            <TextView
+                                    android:id="@+id/textvad2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/montserrat"
+                                    android:layout_marginLeft="10dp"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text="Numbers : "
+                                    android:textColor="@color/colorPrimary"/>
+                            <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:hint="Numbers "
+                                    android:fontFamily="@font/montserrat"
+                                    android:layout_marginLeft="10dp"
+                                    android:textColorHint="@color/vilote"
+                                    android:id="@+id/etad"/>
+
+
+
+
+
+
+                        </GridLayout>
+                    </HorizontalScrollView>
+                    <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1pt"
+                            android:layout_margin="1pt"
+                            android:background="#a7a9ef">
+                    </View>
+
+                    <HorizontalScrollView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp" >
+                        <GridLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:columnCount="4"
+                                android:rowCount="1"
+                                android:orientation="horizontal" >
+
+                            <TextView
+                                    android:id="@+id/textvla"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text="Date : "
+                                    android:layout_marginLeft="10dp"
+                                    android:textColor="@color/colorPrimary"/>
+                            <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:hint=" "
+                                    android:textColor="@color/vilote"
+                                    android:id="@+id/etla"/>
+
+                        </GridLayout>
+                    </HorizontalScrollView>
+
+                    <ScrollView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+                        <GridLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:columnCount="3"
+                                android:rowCount="1"
+                                android:layout_marginTop="15dp"
+                                android:orientation="horizontal" >
+
+                            <Button
+
+                                    android:id="@+id/btnofsave"
+                                    android:layout_width="120dp"
+                                    android:layout_height="30dp"
+                                    android:layout_margin="1dip"
+                                    android:padding="1dip"
+                                    android:layout_marginBottom="40dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:text="Save"
+                                    android:background="@drawable/button"
+                                    android:textColor="@color/white" />
+                        </GridLayout>
+
+                    </ScrollView>
+                </GridLayout>
+            </ScrollView>
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</LinearLayout>

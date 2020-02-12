@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+                android:id="@+id/nav_home"
+                android:icon="@drawable/homeicon"
+                android:title="@string/menu_home" />
+        <item
+                android:id="@+id/nav_gallery"
+                android:icon="@drawable/envelope"
+                android:title="@string/menu_Upadtes" />
+
+        <item
+                android:id="@+id/nav_slideshow"
+                android:icon="@drawable/settings"
+                android:title="@string/menu_machinery" />
+        <item
+                android:id="@+id/nav_tools"
+                android:icon="@drawable/product"
+                android:title="@string/menu_product" />
+        <item
+                android:id="@+id/nav_production"
+                android:icon="@drawable/process"
+                android:title="@string/menu_production" />
+        <item
+                android:id="@+id/nav_handicraft"
+                android:icon="@drawable/needle"
+                android:title="@string/menu_handcraft" />
+        <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/leaves"
+                android:title="@string/menu_nursery" />
+        <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/lightbulb"
+                android:title="@string/menu_Guidance" />
+
+    </group>
+
+    <item android:title="">
+
+    </item>
+
+</menu>

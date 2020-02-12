@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#7971EA</color>
+    <color name="colorPrimaryDark">#7971EA</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="ligthyellow">#F7DC6F</color>
+    <color name="LIGHTCORAL">#F08080</color>
+    <color name="SALMON">#FA8072</color>
+    <color name="DARKSALMON">#E9967A</color>
+    <color name="green">#669C47</color>
+
+    <color name="ligthwhitebule">#DBDFE3</color>
+    <color name="ligthblack">#868B92</color>
+    <color name="black">#0C0C0C</color>
+    <color name="white">#FFFFFF</color>
+    <color name="ligthgreen">#BBE249</color>
+
+    <color name="ligth_green">#47D26B</color>
+    <color name="skyblue">#7971EA</color>
+    <color name="ligthwhite">#FFF6E4</color>
+    <color name="vilote">#F8F9FA</color>
+
+    <color name="rose">#D65AEE</color>
+    <color name="ligthvilote">#7E50F1</color>
+
+    <color name="blue">#5A9DEE</color>
+    <color name="ligth_blue">#47DFE2</color>
+    <color name="ligth_blur">#C9333131</color>
+
+</resources>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".Nursery"
+android:background="@color/vilote">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/pullToRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/ScrollView" tools:ignore="MissingConstraints"
+                android:layout_marginBottom="9dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical"
+            >
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:gravity="center"
+                              android:layout_marginTop="17dp"
+                              android:layout_marginLeft="10dp"
+                              android:layout_marginRight="10dp"
+                              android:background="@drawable/bg_layer"
+                android:id="@+id/lnurseries_search">
+                    <EditText
+                            android:layout_width="300dp"
+                            android:layout_height="40dp"
+                            android:hint="nursery"
+                            android:fontFamily="@font/montserrat"
+                            android:layout_marginLeft="10dp"
+                            android:textColorHint="@color/vilote"
+                    />
+                    <Button
+                            android:layout_width="50dp"
+                            android:layout_height="40dp"
+                            android:background="@color/colorPrimary"
+                            android:drawableTop="@drawable/search"
+                    />
+                    <!--<searchable xmlns:android="http://schemas.android.com/apk/res/android"-->
+                    <!--android:label="@string/app_label"-->
+                    <!--android:hint="@string/search_hint" >-->
+                    <!--</searchable>-->
+
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="45dp"
+                              android:background="@color/white"
+                              android:layout_marginTop="10dp"
+                              android:id="@+id/type_of_nurseries"
+
+                >
+                    <androidx.recyclerview.widget.RecyclerView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:id="@+id/rv_alltype_of_nursery"
+                    />
+
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:gravity="center"
+                              android:background="@color/white"
+                              android:layout_marginTop="17dp">
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="DISTRICT"
+                            android:fontFamily="@font/montserrat"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="12dp"
+                            android:textColor="@color/skyblue"
+                    />
+                    <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+
+                            android:layout_marginLeft="10dp"
+                            android:visibility="visible"
+                            android:background="@color/skyblue"
+                    />
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="145dp"
+                              android:background="@color/white"
+
+
+                >
+                    <androidx.recyclerview.widget.RecyclerView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rv_district_nursery"
+
+
+                            android:orientation="horizontal"
+                    />
+
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:gravity="center"
+                              android:background="@color/white"
+                              android:layout_marginTop="10dp">
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TOP NURSERIES"
+                            android:fontFamily="@font/montserrat"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="12dp"
+                            android:textColor="@color/skyblue"
+                    />
+                    <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+
+                            android:layout_marginLeft="10dp"
+                            android:visibility="visible"
+                            android:background="@color/skyblue"
+                    />
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="145dp"
+                              android:background="@color/white"
+
+
+                >
+                    <androidx.recyclerview.widget.RecyclerView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rv_top_nursery"
+
+
+                            android:orientation="horizontal"
+                    />
+
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:gravity="center"
+                              android:background="@color/white"
+                              android:layout_marginTop="10dp">
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="GOVERMENT NURSERIES"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="12dp"
+                            android:fontFamily="@font/montserrat"
+                            android:textColor="@color/skyblue"
+                    />
+                    <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+
+                            android:layout_marginLeft="10dp"
+                            android:visibility="visible"
+                            android:background="@color/skyblue"
+                    />
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="145dp"
+                              android:background="@color/white"
+
+
+                >
+                    <androidx.recyclerview.widget.RecyclerView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rv_gov_nursery"
+
+
+                            android:orientation="horizontal"
+                    />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</FrameLayout>

@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+             tools:context=".Community"
+android:background="@color/white">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/ScrollView" tools:ignore="MissingConstraints">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical"
+                      android:gravity="center">
+
+            <LinearLayout
+                    android:clipToPadding="false"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                <androidx.cardview.widget.CardView
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        app:cardCornerRadius="9dp"
+                        app:cardBackgroundColor="@color/ligthvilote"
+                        android:id="@+id/farmercardid"
+                        android:layout_width="160dp"
+                        android:layout_height="140dp"
+                        android:layout_margin="10dp">
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                        <ImageView
+                                android:layout_width="64dp"
+                                android:layout_height="64dp"
+
+                                android:src="@drawable/farmer"
+                                android:padding="10dp"/>
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:layout_marginTop="10dp"
+                                android:text="Farmers"
+                               />
+                        <!--<View-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="1dp"-->
+                        <!--android:background="@color/vilote"-->
+                        <!--android:layout_margin="10dp"-->
+                        <!--android:layout_marginTop="10dp"/>-->
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        app:cardCornerRadius="9dp"
+                        android:id="@+id/enterprisescarid"
+                        android:layout_width="160dp"
+                        app:cardBackgroundColor="@color/rose"
+                        android:layout_height="140dp"
+                        android:layout_margin="10dp">
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                        <ImageView
+                                android:layout_width="64dp"
+                                android:layout_height="64dp"
+
+                                android:src="@drawable/enterprise"
+                                android:padding="10dp"/>
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center"
+
+                                android:text="Micro enterprises Clusters"/>
+                        <!--<View-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="1dp"-->
+                        <!--android:background="@color/vilote"-->
+                        <!--android:layout_margin="10dp"/>-->
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                    android:clipToPadding="false"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:layout_width="160dp"
+                        android:layout_height="140dp"
+                        app:cardCornerRadius="9dp"
+                        android:id="@+id/researchcartid"
+                        app:cardBackgroundColor="@color/ligth_blue"
+                        android:layout_margin="10dp">
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                        <ImageView
+                                android:layout_width="64dp"
+                                android:layout_height="64dp"
+
+                                android:src="@drawable/research"
+                                android:padding="10dp"/>
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center"
+
+                                android:text="Research and development"/>
+                        <!--<View-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="1dp"-->
+                        <!--android:background="@color/vilote"-->
+                        <!--android:layout_margin="10dp"/>-->
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        app:cardBackgroundColor="@color/blue"
+                        android:layout_width="160dp"
+                        android:id="@+id/technicalcartid"
+                        app:cardCornerRadius="9dp"
+                        android:layout_height="140dp"
+                        android:layout_margin="10dp">
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                        <ImageView
+                                android:layout_width="64dp"
+                                android:layout_height="64dp"
+
+                                android:padding="10dp"
+                                android:src="@drawable/technical_support" />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="Technologies"
+
+                                android:textStyle="bold" />
+
+
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                    android:clipToPadding="false"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:layout_width="160dp"
+                        android:layout_height="140dp"
+                        app:cardCornerRadius="9dp"
+                        android:id="@+id/digitalcartid"
+                        app:cardBackgroundColor="@color/ligthgreen"
+                        android:layout_margin="10dp">
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                        <ImageView
+                                android:layout_width="64dp"
+                                android:layout_height="64dp"
+
+                                android:src="@drawable/online"
+                                android:padding="10dp"/>
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center"
+                                android:text="Digital platform"/>
+                        <!--<View-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="1dp"-->
+                        <!--android:background="@color/vilote"-->
+                        <!--android:layout_margin="10dp"/>-->
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        app:cardBackgroundColor="@color/ligth_green"
+                        android:layout_width="160dp"
+                        app:cardCornerRadius="9dp"
+                        android:layout_height="140dp"
+                        android:id="@+id/consumercartid"
+                        android:layout_margin="10dp">
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                        <ImageView
+                                android:layout_width="64dp"
+                                android:layout_height="64dp"
+
+                                android:padding="10dp"
+                                android:src="@drawable/consumer" />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="Consumers"
+                                android:textStyle="bold" />
+
+                        <!--<View-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="1dp"-->
+                        <!--android:layout_margin="10dp"-->
+                        <!--android:background="@color/vilote" />-->
+
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                    android:clipToPadding="false"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            android:gravity="center"
+                            android:text="Supported by"/>
+
+                    <ImageView
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+
+                            android:src="@drawable/rajagiri_logo"
+                            android:padding="10dp"/>
+                    <ImageView
+                            android:layout_width="128dp"
+                            android:layout_height="64dp"
+
+                            android:src="@drawable/icssr"
+                            android:padding="10dp"/>
+
+
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+        <!--<LinearLayout android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_marginTop="50dp">-->
+
+        <!--<ImageView android:layout_height="100dp" android:layout_width="100dp"  android:layout_marginTop="10dp" android:id="@+id/farmer" android:src="@drawable/gardener" android:background="@drawable/bg_layer" />-->
+
+        <!--<ImageView android:layout_height="90dp" android:layout_width="90dp" android:layout_marginLeft="75dp" android:layout_marginTop="10dp" android:id="@+id/microenterprises" android:background="@drawable/bg_layer"/>-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout android:layout_width="match_parent" android:layout_height="50dp"-->
+        <!--android:gravity="center"-->
+        <!--&gt;-->
+        <!--<TextView android:layout_height="50dp" android:layout_width="100dp" android:textColor="@color/colorPrimary"  android:layout_marginTop="10dp" android:text="Farmer" android:id="@+id/teme" android:background="@drawable/bg_layer"/>-->
+
+        <!--<TextView android:layout_height="50dp" android:layout_width="100dp" android:textColor="@color/colorPrimary" android:layout_marginLeft="75dp" android:layout_marginTop="10dp" android:text="Micro enterprises" android:id="@+id/tassesment" android:background="@drawable/bg_layer"/>-->
+
+        <!--</LinearLayout>-->
+        <!--<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:gravity="center">-->
+
+        <!--<ImageView android:layout_height="100dp" android:layout_width="100dp"  android:layout_marginTop="10dp" android:id="@+id/inter" android:background="@drawable/bg_layer"/>-->
+
+        <!--<ImageView android:layout_height="90dp" android:layout_width="90dp" android:layout_marginLeft="70dp" android:layout_marginTop="10dp" android:id="@+id/tips" android:background="@drawable/bg_layer"/>-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout android:layout_width="match_parent" android:layout_height="40dp"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_marginTop="10dp">-->
+        <!--<TextView android:layout_height="50dp" android:layout_width="100dp" android:textColor="@color/colorPrimary"   android:id="@+id/tinter" android:text="Research and development" android:background="@drawable/bg_layer"/>-->
+
+        <!--<TextView android:layout_height="50dp" android:layout_width="100dp" android:textColor="@color/colorPrimary" android:layout_marginLeft="70dp" android:id="@+id/ttips"  android:text="Technical" android:background="@drawable/bg_layer"/>-->
+
+        <!--</LinearLayout>-->
+        <!--<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:gravity="center">-->
+
+        <!--<ImageView android:layout_height="100dp" android:layout_width="100dp"  android:layout_marginTop="10dp" android:id="@+id/digital" android:background="@color/white"/>-->
+
+        <!--<ImageView android:layout_height="90dp" android:layout_width="90dp" android:layout_marginLeft="70dp" android:layout_marginTop="10dp" android:id="@+id/consumers" android:background="@color/white"/>-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout android:layout_width="match_parent" android:layout_height="40dp"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_marginTop="10dp">-->
+        <!--<TextView android:layout_height="50dp" android:layout_width="100dp" android:textColor="@color/colorPrimary"   android:id="@+id/tdigital" android:text="Digital platform" android:background="@color/white"/>-->
+
+        <!--<TextView android:layout_height="50dp" android:layout_width="100dp" android:textColor="@color/colorPrimary" android:layout_marginLeft="70dp" android:id="@+id/tconsumers"  android:text="Consumers" android:background="@color/white"/>-->
+
+        <!--</LinearLayout>-->
+        <!--</LinearLayout>-->
+    </ScrollView>
+
+</FrameLayout>

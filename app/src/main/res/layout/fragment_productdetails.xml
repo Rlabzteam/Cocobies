@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+             tools:context=".Productdetails"
+android:background="@color/vilote">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/pullToRefreshproductdetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/ScrollViewproductdetails" tools:ignore="MissingConstraints">
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                          android:orientation="vertical"
+                          android:gravity="center">
+                <LinearLayout
+                        android:clipToPadding="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <androidx.cardview.widget.CardView
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            app:cardCornerRadius="9dp"
+                            android:id="@+id/card_productdetails"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            app:cardPreventCornerOverlap="false"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp">
+                        <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                        > <TextView
+                                android:layout_width="290dp"
+                                android:layout_height="40dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="20dp"
+                                android:fontFamily="@font/montserrat"
+                                android:id="@+id/product_name"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="10dp"
+                                android:text="name  "/>
+                            <TextView
+                                    android:layout_width="120dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Coconut Product"
+                                    android:textSize="10dp"
+                                    android:textColor="@color/ligthblack"
+                                    android:fontFamily="@font/montserrat"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="35dp"/>
+                            <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="180dp"
+                                    android:adjustViewBounds="true"
+                                    android:layout_marginTop="50dp"
+                                    android:scaleType="centerCrop"
+                                    android:id="@+id/product_image"
+
+                            />
+                            <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:gravity="center"
+                                    android:layout_marginTop="50dp"
+                            >
+                                <ImageView android:layout_width="40dp"
+                                           android:layout_height="40dp"
+                                           android:src="@drawable/play_button"
+                                           android:layout_marginTop="60dp"
+                                           android:id="@+id/play_vedio_product"
+
+                                />
+                            </RelativeLayout>
+                            <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:gravity="center"
+                                    android:layout_marginTop="50dp"
+                            >
+
+                                <ImageView android:layout_width="25dp"
+                                           android:layout_height="25dp"
+                                           android:src="@drawable/bookmark"
+                                           android:layout_marginTop="190dp"
+                                           android:layout_marginLeft="310dp"
+                                           android:id="@+id/bookmark_product_details"
+                                />
+                                <ImageView android:layout_width="25dp"
+                                           android:layout_height="25dp"
+                                           android:src="@drawable/bookmarkadd"
+                                           android:layout_marginTop="190dp"
+                                           android:layout_marginLeft="310dp"
+                                           android:id="@+id/bookmarkadd_product_details"
+                                />
+                                <ImageView android:layout_width="25dp"
+                                           android:layout_height="25dp"
+                                           android:src="@drawable/saved"
+                                           android:layout_marginTop="190dp"
+                                           android:layout_marginLeft="260dp"
+                                           android:id="@+id/saved_product_details"
+                                />
+                                <ImageView android:layout_width="25dp"
+                                           android:layout_height="25dp"
+                                           android:src="@drawable/save"
+                                           android:layout_marginTop="190dp"
+                                           android:layout_marginLeft="260dp"
+                                           android:id="@+id/save_product_details"
+                                />
+                                <ImageView android:layout_width="25dp"
+                                           android:layout_height="25dp"
+                                           android:src="@drawable/share"
+                                           android:id="@+id/shar_product_details"
+                                           android:layout_marginTop="190dp"
+                                           android:layout_marginLeft="210dp"
+
+
+                                />
+                            </RelativeLayout>
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:fontFamily="@font/montserrat"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="14dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="270dp"
+                                    android:text="Ingredients  "/>
+                            <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/recyclerview_Ingredients"
+                                    android:layout_width="match_parent"
+                                    android:layout_marginTop="295dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:scrollbars="vertical" tools:ignore="MissingPrefix"
+                                    android:layout_marginBottom="30dp"/>
+
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:clipToPadding="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <androidx.cardview.widget.CardView
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            app:cardCornerRadius="9dp"
+                            android:id="@+id/card_Method_of_Preparation"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            app:cardPreventCornerOverlap="false"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp">
+                        <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="65dp"
+                                android:orientation="vertical"
+                        >
+
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:fontFamily="@font/montserrat"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="20dp"
+                                    android:id="@+id/Method_of_Preparation"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="30dp"
+                                    android:text="Method of Preparation  "/>
+
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                        >
+
+
+                            <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/ligthblack"
+                                    android:textSize="10dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="20dp"
+                                    android:textAlignment="gravity"
+                                    android:layout_marginTop="80dp"
+                                    android:text="content"
+                                    android:id="@+id/txt_Method_of_Preparation"
+                                    android:layout_marginBottom="25dp"/>
+
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</FrameLayout>
